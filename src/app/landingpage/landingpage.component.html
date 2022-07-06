@@ -1,0 +1,11 @@
+
+<div style="text-align:center">
+  <h2>{{title}}</h2> <!--string interpolation-->
+  <h3 [style.color] ="fontColor">Some components to study</h3> <!--property bindind-->
+<!--   <a class="button" routerLink="/demo">Demo</a><br><br>-->
+   <button type="button"   [disabled]="canClick" (click)="sayMessage()">Trigger Alert Message</button> 
+   <!--propertyandevent-->
+  <app-demo [message]="data"></app-demo>
+ <h3>{{heading}}</h3>
+  <!--<app-demo (headingEvent)="receiveMessage($event)"></app-demo>--> 
+   </div>
