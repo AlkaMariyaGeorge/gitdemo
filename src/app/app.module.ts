@@ -7,6 +7,8 @@ import { DemoComponent } from './demo/demo.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { DemoIdComponent } from './demo-id/demo-id.component';
+import { FormElementsComponent } from './form-elements/form-elements.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { DemoIdComponent } from './demo-id/demo-id.component';
     DemoComponent,
     PagenotfoundComponent,
     LandingpageComponent,
-    DemoIdComponent
+    DemoIdComponent,
+    FormElementsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

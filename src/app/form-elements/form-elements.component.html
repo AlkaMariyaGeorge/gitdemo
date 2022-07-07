@@ -1,0 +1,12 @@
+<div style="text-align:center">
+<p>
+ Reactive Form
+</p>
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
+  <label for="name">Name : </label>
+  <input id="name" type="text" formControlName="name"><br><br>
+  <label for="address">Address : </label>
+  <input id="address" type="text" formControlName="address">
+  <button type="submit">Save</button>
+</form>
+</div>

@@ -8,22 +8,32 @@ import { adjustBlueprintForNewNode } from '@angular/core/src/render3/instruction
 })
 export class LandingpageComponent implements OnInit {
   heading: any;
+  title = "Welcome to Angular demo project !";
+  fontColor = 'blue';
+  canClick = false;
+  message = 'Alert message';
+  //data = 'parentchild';
+  inputText: string = '';
+  show: boolean = true;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
-title="Welcome to Angular demo project !";
-fontColor= 'blue';
-canClick=false;
-message='Alert message';
-data='parenttochild';
 
-sayMessage(){
-  alert(this.message);
-}
 
-receiveMessage($event){
-this.heading=$event;
-}
+  sayMessage() {
+    alert(this.message);
+  }
+  onSubmit(passingData) {
+    this.inputText = passingData.value;
+  }
+  destroy() {
+    this.show = false;
+  }
+
+  receiveMessage($event) {
+    this.heading = $event;
+  }
 }
