@@ -1,0 +1,14 @@
+<div style="text-align:center ; padding: 250px;  background-image:url(assets/images/login.jpg)
+;background-repeat: no-repeat;background-position: center top; ">
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="name">Username : </label>
+    <input id="name" type="text" formControlName="userName" placeholder="Name"><br><br>
+    <label for="address">Password : </label>
+    <input id="address" type="password" formControlName="password" placeholder="Password"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+<div *ngIf="errorMessage" >
+  <p style="color: brown;  border: 2px solid rgb(255, 0, 0)">Error message  is {{errorMessage}}</p>
+</div>
+</div>

@@ -11,6 +11,7 @@ export class DemoComponent implements OnInit, OnChanges,DoCheck,AfterContentInit
   @Input() message: string = 'hello';
   // heading:string="Received from Child";
   // @Output() headingEvent= new EventEmitter<string>();
+  collection=["apple","mango","banana"];
   constructor() {
     console.log("Constructor is called!");
     console.log(this.message)

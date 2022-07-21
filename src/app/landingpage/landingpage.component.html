@@ -1,4 +1,6 @@
-
+<div  style=" text-align: right;">
+  <button (click)="loggedOut()">Log Out</button>
+</div>
 <div style="text-align:center">
   
   <h2>{{title}}</h2> <!--string interpolation-->
@@ -18,4 +20,5 @@
  
  <h3>{{heading}}</h3>
   <!--<app-demo (headingEvent)="receiveMessage($event)"></app-demo>--> 
+  <app-twoway-binding [(size)]="fontSize"></app-twoway-binding>
    </div>

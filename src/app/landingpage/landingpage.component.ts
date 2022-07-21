@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { adjustBlueprintForNewNode } from '@angular/core/src/render3/instructions';
 
@@ -15,8 +16,8 @@ export class LandingpageComponent implements OnInit {
   //data = 'parentchild';
   inputText: string = '';
   show: boolean = true;
-
-  constructor() {
+ fontSize:number=16;
+  constructor(private authService:AuthService) {
   }
 
   ngOnInit() {
@@ -35,5 +36,8 @@ export class LandingpageComponent implements OnInit {
 
   receiveMessage($event) {
     this.heading = $event;
+  }
+  loggedOut(){
+this.authService.logOut();
   }
 }

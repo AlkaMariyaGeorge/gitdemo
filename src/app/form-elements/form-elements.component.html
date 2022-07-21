@@ -9,4 +9,7 @@
   <input id="address" type="text" formControlName="address">
   <button type="submit">Save</button>
 </form>
+<h3>My Birthday is on {{birthday| date:'mediumDate'}} </h3>
+<h3>My Birthday is on {{birthday| date:'fullDate'|  uppercase }} </h3>
+<p>Currency : {{500 | currency:EUR: 'Euros' }}</p>
 </div>

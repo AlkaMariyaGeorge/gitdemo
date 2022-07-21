@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-elements',
@@ -8,6 +9,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class FormElementsComponent implements OnInit {
 reactiveForm:FormGroup;
+birthday= new Date(1992,6,17);
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
