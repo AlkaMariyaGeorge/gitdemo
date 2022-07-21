@@ -1,0 +1,15 @@
+<div style="text-align:center">
+<p>
+ Reactive Form
+</p>
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
+  <label for="name">Name : </label>
+  <input id="name" type="text" formControlName="name"><br><br>
+  <label for="address">Address : </label>
+  <input id="address" type="text" formControlName="address">
+  <button type="submit">Save</button>
+</form>
+<h3>My Birthday is on {{birthday| date:'mediumDate'}} </h3>
+<h3>My Birthday is on {{birthday| date:'fullDate'|  uppercase }} </h3>
+<p>Currency : {{500 | currency:EUR: 'Euros' }}</p>
+</div>

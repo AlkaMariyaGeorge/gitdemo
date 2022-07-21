@@ -1,0 +1,10 @@
+<div style="background-color:greenyellow ;text-align:center">
+  <h2>Child</h2>
+  <!--<h2>{{message}}</h2>-->
+  <p>The message is {{message}}</p>
+  <ng-content></ng-content>
+  <button type="button" (click)="sendMessage()">Send message to parent</button>
+  
+    <div *ngFor="let item of collection" >{{item}}</div>
+ 
+</div>
